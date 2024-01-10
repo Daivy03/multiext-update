@@ -11,7 +11,7 @@ import org.jsoup.nodes.Element
 
 class EurostreamingProvider : MainAPI() {
     override var lang = "it"
-    override var mainUrl = "https://eurostreaming.expert"
+    override var mainUrl = "https://eurostreaming.money"
     override var name = "Eurostreaming"
     override val hasMainPage = true
     override val hasChromecastSupport = true
@@ -21,8 +21,8 @@ class EurostreamingProvider : MainAPI() {
     )
 
     override val mainPage = mainPageOf(
-        "$mainUrl/serie-tv-archive/page/" to "Ultime serie Tv",
-        "$mainUrl/animazione/page/" to "Ultime serie Animazione",
+        "$mainUrl/serie-tv-archive/" to "Ultime serie Tv",
+        "$mainUrl/anime-cartoni-animati/" to "Ultime serie Animazione",
         )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {

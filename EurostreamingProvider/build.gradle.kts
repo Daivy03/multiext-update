@@ -6,7 +6,7 @@ cloudstream {
     // All of these properties are optional, you can safely remove them
 
     // description = "Lorem Ipsum"
-    authors = listOf("Adippe")
+    authors = listOf("Adippe","Daivy")
 
     /**
      * Status int as the following:
@@ -15,7 +15,7 @@ cloudstream {
      * 2: Slow
      * 3: Beta only
      * */
-    status = 1 // will be 3 if unspecified
+    status = 3 // will be 3 if unspecified
     tvTypes = listOf(
         "TvSeries"
     )
