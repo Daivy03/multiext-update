@@ -30,7 +30,7 @@ jobs:
       
       - name: Clean old builds
         run: rm $GITHUB_WORKSPACE/builds/*.cs3 || true
-      - name: Display github-workspace
+      - name: Display github-workspace (troubleshooting)
         run: |
           echo ${{ github.workspace }}
           echo $GITHUB_WORKSPACE
